@@ -54,7 +54,7 @@ The Settings screen may include optional donation links to PayPal and Stripe. Th
 
 SN Helper requests permissions needed for its features:
 
-- `activeTab`, `tabs`, and `webNavigation`: to detect whether the current tab is a ServiceNow page and understand the current screen context.
+- `activeTab` and `tabs`: to detect whether the current tab is a ServiceNow page and understand the current screen context.
 - `scripting`: to run helper scripts on ServiceNow pages selected by the user.
 - `storage`: to save extension settings locally.
 - `debugger`: to support reliable input into ServiceNow Workspace forms when the user runs the Workspace Fill feature.
@@ -128,7 +128,7 @@ SN Helper はユーザーデータを第三者へ販売または移転しませ�
 
 SN Helper は、機能に必要な権限を要求します。
 
-- `activeTab`、`tabs`、`webNavigation`: 現在のタブが ServiceNow ページかどうかを判定し、現在の画面の状況を把握するため。
+- `activeTab`、`tabs`: 現在のタブが ServiceNow ページかどうかを判定し、現在の画面の状況を把握するため。
 - `scripting`: ユーザーが選択した ServiceNow ページ上で補助スクリプトを実行するため。
 - `storage`: 拡張機能の設定をローカルに保存するため。
 - `debugger`: ユーザーが Workspace 入力機能を実行する際、ServiceNow Workspace フォームへ安定して入力するため。
