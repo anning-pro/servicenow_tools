@@ -1,0 +1,46 @@
+{
+  "table": "sn_customerservice_case",
+  "description": "ServiceNow Case 字段设计示例。实际使用时请根据环境表名和字段名调整。",
+  "fields": [
+    {
+      "name": "u_customer_name",
+      "label": "顾客名",
+      "type": "String",
+      "mandatory": true,
+      "example": "山田太郎",
+      "note": "用于 Case 顾客名称显示"
+    },
+    {
+      "name": "u_project_name",
+      "label": "项目名",
+      "type": "String",
+      "mandatory": true,
+      "example": "CSM 导入项目",
+      "note": "用于识别 Case 所属项目"
+    },
+    {
+      "name": "assigned_to",
+      "label": "Assigned to",
+      "type": "Reference: sys_user",
+      "mandatory": true,
+      "example": "admin",
+      "note": "担当者"
+    },
+    {
+      "name": "u_management_delete_flag",
+      "label": "管理删除标记",
+      "type": "True/False",
+      "mandatory": false,
+      "example": false,
+      "note": "逻辑删除判断用。ServiceNow 中 getValue 通常返回字符串 'true' 或 'false'。"
+    },
+    {
+      "name": "short_description",
+      "label": "Short description",
+      "type": "String",
+      "mandatory": false,
+      "example": "Case 创建测试",
+      "note": "Case 概要"
+    }
+  ]
+}
